@@ -1,8 +1,8 @@
-const getAll = require("./getAll");
+const getListContacts = require("./getListContacts");
 const updateContactsList = require("./updateContactsList");
 
-const updateById = async(id, name, email, phone) => {
-    const contactsList = await getAll();
+const updateContactById = async(id, name, email, phone) => {
+    const contactsList = await getListContacts();
     
     const updateData = {
         name,
@@ -19,4 +19,4 @@ const updateById = async(id, name, email, phone) => {
     return contactsList[idx];
 }
 
-module.exports = updateById;
+module.exports = updateContactById;

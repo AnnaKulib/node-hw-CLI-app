@@ -1,8 +1,8 @@
-const getAll = require("./getAll");
+const getListContacts = require("./getListContacts");
 const updateContactsList = require("./updateContactsList");
 
-const removeById = async(id) => {
-    const contactsList = await getAll();
+const removeContactById = async(id) => {
+    const contactsList = await getListContacts();
     const idx = contactsList.findIndex(item => item.id === id);
     if(idx === -1){
         return null;
@@ -13,4 +13,4 @@ const removeById = async(id) => {
     
 }
 
-module.exports = removeById;
+module.exports = removeContactById;

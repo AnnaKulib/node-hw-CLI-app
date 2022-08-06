@@ -1,10 +1,10 @@
 const { v4 } = require("uuid");
 
-const getAll = require("./getAll");
+const getListContacts = require("./getListContacts");
 const updateContactsList = require("./updateContactsList");
 
-const add = async (name, email, phone) => {
-  const contactsList = await getAll();
+const addContact = async (name, email, phone) => {
+  const contactsList = await getListContacts();
 
   const newData = {
     name,
@@ -19,4 +19,4 @@ const add = async (name, email, phone) => {
   return newContact;
 };
 
-module.exports = add;
+module.exports = addContact;
