@@ -1,0 +1,29 @@
+{
+  "name": "hw-cli-app",
+  "version": "1.0.0",
+  "description": "https://ibb.co/sq1xpwp\r https://ibb.co/8dq5wTV\r https://ibb.co/HpJL1G0\r https://ibb.co/Fxsx7yc\r https://ibb.co/n3KRt59",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "start:dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaKulib/node-hw-CLI-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaKulib/node-hw-CLI-app/issues"
+  },
+  "homepage": "https://github.com/AnnaKulib/node-hw-CLI-app#readme",
+  "dependencies": {
+    "commander": "^9.4.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
